@@ -1,0 +1,48 @@
+@import '../../../styles/variables'
+  
+$fontGrafit: 'Rubik Wet Paint', sans-serif
+  
+.header
+  position: fixed
+  top: 0
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: $background-color
+  height: 80px
+  opacity: 0.7
+
+  button
+    color: $primary-color
+    margin-bottom: 8px
+    font-family: $fontGrafit
+    cursor: pointer
+    border: none
+    background-color: rgba(0, 0, 0, 0)
+    transition: all 0.3s ease-in-out
+    &:hover
+      transform: scale(1.1)
+      color: $secondary-color
+
+  .SK_dev
+    font-size: 36px
+    text-shadow: 0 0 10px $primary-color
+    -webkit-text-stroke: 2px $secondary-color
+    margin-left: 100px
+    &:hover
+      text-shadow: 0 0 15px $primary-color
+      -webkit-text-stroke: 2px $primary-color
+
+  .header_btns
+    margin-right: 100px
+    text-align: right
+
+    button
+      font-size: 18px
+      text-shadow: 0 0 10px $secondary-color
+      display: inline
+      margin: 0 8px
+      &:hover 
+        text-shadow: 0 0 10px $primary-color
+        -webkit-text-stroke: 1px $primary-color
